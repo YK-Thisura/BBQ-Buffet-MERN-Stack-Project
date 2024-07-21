@@ -15,6 +15,8 @@ app.use(cors());
 //db connection
 connectDB();
 
+// api  endpoint
+
 app.get("/", (req, res) => {
   res.send("API Working");
 });
