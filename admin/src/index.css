@@ -19,8 +19,8 @@ a {
 
 hr {
   border: none;
-  height: 1px;
-  background-color: black;
+  height: 2px;
+  background-color: #7e4621;
 }
 
 .app-content {
