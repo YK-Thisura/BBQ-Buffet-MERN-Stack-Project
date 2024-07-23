@@ -4,8 +4,7 @@ import { assets } from "../../assets/assets";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-const Add = () => {
-  const url = "http://localhost:4000";
+const Add = ({ url }) => {
   const [image, setImage] = useState(false);
   const [data, setData] = useState({
     name: "",
@@ -104,7 +103,7 @@ const Add = () => {
               value={data.price}
               type="number"
               name="price"
-              placeholder="$20"
+              placeholder="Rs "
             />
           </div>
         </div>
