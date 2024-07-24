@@ -74,7 +74,7 @@
 
 .nav-profile-dropdown {
   position: absolute;
-  margin-top: 15px;
+  margin-top: 5px;
   display: none;
   right: 0;
   z-index: 1;
