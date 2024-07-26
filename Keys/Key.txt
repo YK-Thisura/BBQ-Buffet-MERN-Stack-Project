@@ -1,0 +1,11 @@
+Admin Dashboard
+
+email =
+
+password =
+
+
+
+Payment Methods
+
+Dummy Card Number = 4000000360000006
