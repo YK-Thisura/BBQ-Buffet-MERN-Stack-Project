@@ -31,10 +31,12 @@
 }
 
 .explore-menu-list-item img {
-  width: 7.5vw;
+  width: 14vw;
   min-width: 80px;
+  height: 14vw;
+  min-height: 80px;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 0;
   transition: 0.2s;
 }
 
