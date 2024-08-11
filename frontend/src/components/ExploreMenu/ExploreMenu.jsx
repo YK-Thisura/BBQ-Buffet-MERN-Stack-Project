@@ -5,10 +5,10 @@ import { menu_list } from "../../assets/assets";
 const ExploreMenu = ({ category, setCategory }) => {
   return (
     <div className="explore-menu" id="explore-menu">
-      <h1>Explore our menu</h1>
+      <h1>Discover The Nearest Spot Around You</h1>
       <p className="explore-menu-text">
-        When you build an Java application proje ct that has a main class,
-        theIDE automatically copies all of the JAR files on the projects
+        Unforgettable Dining Experience, With Convenient Delivery Options Right
+        To Your Door ... !
       </p>
       <div className="explore-menu-list">
         {menu_list.map((item, index) => {
