@@ -1,11 +1,30 @@
-Admin Dashboard
+************************************************ User Dummy Email and Password
 
-email =
+**************** User 1 ****************
 
-password =
+Name = Theekshana Thisura
+
+email = thisura@gmail.com
+
+password =12345678
+
+**************** User 2 ****************
+
+Name = Nethmi Kawya
+
+email = Kawya@gmail.com
+
+password =12345678
+
+**************** User 3 ****************
+
+Name = Adeesha Chamikara
+
+email = Chamikara@gmail.com
+
+password =12345678
 
 
-
-Payment Methods
+************************************************ Payment Methods
 
 Dummy Card Number = 4000000360000006
