@@ -36,7 +36,7 @@ const Navbar = ({ setShowLogin }) => {
           onClick={() => setMenu("menu")}
           className={menu === "menu" ? "active" : ""}
         >
-          Location
+          Reviews
         </a>
         <a
           href="#app-download"
@@ -46,11 +46,18 @@ const Navbar = ({ setShowLogin }) => {
           App Download
         </a>
         <a
+          href="#explore-menu"
+          onClick={() => setMenu("menu")}
+          className={menu === "menu" ? "active" : ""}
+        >
+          Location
+        </a>
+        <a
           href="#footer"
           onClick={() => setMenu("contact us")}
           className={menu === "contact us" ? "active" : ""}
         >
-          Contact
+          Contact Us
         </a>
       </ul>
       <div className="navbar-right">

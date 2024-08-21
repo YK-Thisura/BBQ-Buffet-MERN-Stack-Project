@@ -60,6 +60,25 @@ import bag_icon from "./bag_icon.png";
 import logout_icon from "./logout_icon.png";
 import parcel_icon from "./parcel_icon.png";
 import mobiletext from "./mobiletext.png";
+import cover from "./cover.png";
+import gallery1 from "./gallery1.jpg";
+import gallery2 from "./gallery2.jpg";
+import gallery3 from "./gallery3.jpg";
+import gallery4 from "./gallery4.jpg";
+import gallery5 from "./gallery5.jpg";
+import gallery6 from "./gallery6.jpg";
+import gallery7 from "./gallery7.jpg";
+import gallery8 from "./gallery8.jpg";
+import gallery9 from "./gallery9.jpg";
+import gallery10 from "./gallery10.jpg";
+import gallery11 from "./gallery11.jpg";
+import gallery12 from "./gallery12.jpg";
+import gallery13 from "./gallery13.jpg";
+import gallery14 from "./gallery14.jpg";
+import gallery15 from "./gallery15.jpg";
+import gallery16 from "./gallery16.jpg";
+import gallery17 from "./gallery17.jpg";
+import gallery18 from "./gallery18.jpg";
 
 export const assets = {
   logo,
@@ -82,6 +101,25 @@ export const assets = {
   bag_icon,
   parcel_icon,
   mobiletext,
+  cover,
+  gallery1,
+  gallery2,
+  gallery3,
+  gallery4,
+  gallery5,
+  gallery6,
+  gallery7,
+  gallery8,
+  gallery9,
+  gallery10,
+  gallery11,
+  gallery12,
+  gallery13,
+  gallery14,
+  gallery15,
+  gallery16,
+  gallery17,
+  gallery18,
 };
 
 export const menu_list = [
