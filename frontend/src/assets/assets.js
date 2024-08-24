@@ -79,6 +79,15 @@ import gallery15 from "./gallery15.jpg";
 import gallery16 from "./gallery16.jpg";
 import gallery17 from "./gallery17.jpg";
 import gallery18 from "./gallery18.jpg";
+import cus1 from "./cus1.jpg";
+import cus2 from "./cus2.jpg";
+import cus3 from "./cus3.jpg";
+import cus4 from "./cus4.jpg";
+import cus5 from "./cus5.jpg";
+import cus6 from "./cus6.jpg";
+import cus7 from "./cus7.jpg";
+import cus8 from "./cus8.jpg";
+import cus9 from "./cus9.jpg";
 
 export const assets = {
   logo,
@@ -120,6 +129,15 @@ export const assets = {
   gallery16,
   gallery17,
   gallery18,
+  cus1,
+  cus2,
+  cus3,
+  cus4,
+  cus5,
+  cus6,
+  cus7,
+  cus8,
+  cus9,
 };
 
 export const menu_list = [
