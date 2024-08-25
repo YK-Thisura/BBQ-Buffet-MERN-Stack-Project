@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  margin-top: 50px;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.image-section {
+  flex: 2;
+  margin-left: 100px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.text-section {
+  flex: 2.3;
+}
+
+.heading {
+  color: #7e4621;
+  margin-top: 50px;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.descriptor {
+  color: #7e4621;
+  text-align: justify;
+  font-size: 16px;
+  margin-left: 40px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 20px;
+}
+
+.descriptor::before {
+  content: "🍔";
+  position: absolute;
+  left: -40px;
+  color: #7e4621;
+  font-size: 35px;
+  line-height: 40px;
+}

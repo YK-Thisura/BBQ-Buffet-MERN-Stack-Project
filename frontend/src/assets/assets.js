@@ -88,6 +88,7 @@ import cus6 from "./cus6.jpg";
 import cus7 from "./cus7.jpg";
 import cus8 from "./cus8.jpg";
 import cus9 from "./cus9.jpg";
+import chef1 from "./chef1.png";
 
 export const assets = {
   logo,
@@ -138,6 +139,7 @@ export const assets = {
   cus7,
   cus8,
   cus9,
+  chef1,
 };
 
 export const menu_list = [

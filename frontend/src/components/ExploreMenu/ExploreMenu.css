@@ -8,11 +8,12 @@
 .explore-menu h1 {
   margin-top: 50px;
   color: #7e4621;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .explore-menu-text {
   max-width: 80%;
+  color: #7e4621;
   columns: #7e4621;
   font-weight: 500;
 }
