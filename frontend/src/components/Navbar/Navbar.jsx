@@ -32,20 +32,6 @@ const Navbar = ({ setShowLogin }) => {
           Home
         </Link>
         <a
-          href="#chef"
-          onClick={() => setMenu("chef")}
-          className={menu === "chef" ? "active" : ""}
-        >
-          About
-        </a>
-        <a
-          href="#footer"
-          onClick={() => setMenu("contact us")}
-          className={menu === "contact us" ? "active" : ""}
-        >
-          Contact Us
-        </a>
-        <a
           href="#explore-menu"
           onClick={() => setMenu("menu")}
           className={menu === "menu" ? "active" : ""}
@@ -57,7 +43,7 @@ const Navbar = ({ setShowLogin }) => {
           onClick={() => setMenu("app-download")}
           className={menu === "app-download" ? "active" : ""}
         >
-          Mobile
+          App Download
         </a>
         <a
           href="#feedback-slider"
@@ -65,6 +51,13 @@ const Navbar = ({ setShowLogin }) => {
           className={menu === "feedback-slider" ? "active" : ""}
         >
           Reviews
+        </a>
+        <a
+          href="#footer"
+          onClick={() => setMenu("contact us")}
+          className={menu === "contact us" ? "active" : ""}
+        >
+          Contact Us
         </a>
       </ul>
       <div className="navbar-right">
