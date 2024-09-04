@@ -5,8 +5,8 @@
 }
 
 .food-display h2 {
-  font-size: max(2vw, 24px);
-  font-weight: 600;
+  font-size: max(2vw, 34px);
+  font-weight: bold;
 }
 
 .food-display-list {
