@@ -1,3 +1,5 @@
+// src/components/LoginPopup.js
+
 import React, { useContext, useState } from "react";
 import "./LoginPopup.css";
 import { assets } from "../../assets/assets";
@@ -22,21 +24,37 @@ const LoginPopup = ({ setShowLogin }) => {
 
   const onLogin = async (event) => {
     event.preventDefault();
-    let newUrl = url;
-    if (currState === "Login") {
-      newUrl += "/api/user/login";
-    } else {
-      newUrl += "/api/user/register";
+
+    // Hardcoded admin credentials
+    const adminEmail = "admin@gmail.com";
+    const adminPassword = "admin12345";
+
+    if (data.email === adminEmail && data.password === adminPassword) {
+      // Simulate setting a token and redirecting to the admin dashboard
+      setToken("admin_fake_token");
+      localStorage.setItem("token", "admin_fake_token");
+      setShowLogin(false);
+      window.location.href = "http://localhost:5174"; // Redirect to the admin dashboard
+      return;
     }
 
-    const response = await axios.post(newUrl, data);
+    // Regular user login flow
+    try {
+      const response = await axios.post(`${url}/api/user/login`, data);
 
-    if (response.data.success) {
-      setToken(response.data.token);
-      localStorage.setItem("token", response.data.token);
-      setShowLogin(false);
-    } else {
-      alert(response.data.message);
+      if (response.data.success) {
+        setToken(response.data.token);
+        localStorage.setItem("token", response.data.token);
+        setShowLogin(false);
+
+        // Redirect to user dashboard or homepage
+        window.location.href = "/dashboard";
+      } else {
+        alert(response.data.message);
+      }
+    } catch (error) {
+      console.error("Login error: ", error);
+      alert("An error occurred during login. Please try again.");
     }
   };
 
@@ -48,13 +66,11 @@ const LoginPopup = ({ setShowLogin }) => {
           <img
             onClick={() => setShowLogin(false)}
             src={assets.cross_icon}
-            alt=""
+            alt="Close"
           />
         </div>
         <div className="login-popup-inputs">
-          {currState === "Login" ? (
-            <></>
-          ) : (
+          {currState !== "Login" && (
             <input
               name="name"
               onChange={onChangeHandler}

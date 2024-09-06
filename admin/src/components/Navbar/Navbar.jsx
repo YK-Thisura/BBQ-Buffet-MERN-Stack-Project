@@ -6,7 +6,9 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <img className="logo" src={assets.logo} alt="" />
-      <img className="profile" src={assets.profile_image} alt="" />
+      <a href="http://localhost:5173/">
+        <img className="profile" src={assets.profile_image} alt="Profile" />
+      </a>
     </div>
   );
 };
