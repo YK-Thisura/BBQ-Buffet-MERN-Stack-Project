@@ -1,5 +1,3 @@
-// src/components/LoginPopup.js
-
 import React, { useContext, useState } from "react";
 import "./LoginPopup.css";
 import { assets } from "../../assets/assets";
@@ -25,16 +23,30 @@ const LoginPopup = ({ setShowLogin }) => {
   const onLogin = async (event) => {
     event.preventDefault();
 
-    // Hardcoded admin credentials
+    // Hardcoded admin and staff credentials
     const adminEmail = "admin@gmail.com";
     const adminPassword = "admin12345";
 
+    const staffEmail = "staff@gmail.com";
+    const staffPassword = "staff12345";
+
+    // Check for admin credentials
     if (data.email === adminEmail && data.password === adminPassword) {
       // Simulate setting a token and redirecting to the admin dashboard
       setToken("admin_fake_token");
       localStorage.setItem("token", "admin_fake_token");
       setShowLogin(false);
       window.location.href = "http://localhost:5174"; // Redirect to the admin dashboard
+      return;
+    }
+
+    // Check for staff credentials
+    if (data.email === staffEmail && data.password === staffPassword) {
+      // Simulate setting a token and redirecting to the staff dashboard
+      setToken("staff_fake_token");
+      localStorage.setItem("token", "staff_fake_token");
+      setShowLogin(false);
+      window.location.href = "http://localhost:5175"; // Redirect to the staff dashboard
       return;
     }
 

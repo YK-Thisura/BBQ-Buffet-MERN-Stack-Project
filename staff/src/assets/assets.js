@@ -6,7 +6,7 @@ import upload_area from "./upload_area.png";
 import parcel_icon from "./parcel_icon.png";
 import list_icon from "./list_icon.png";
 import body_icon from "./body_icon.png";
-import repo_icon from "./repo_icon.png";
+import q_icon from "./q_icon.png";
 
 export const assets = {
   logo,
@@ -17,7 +17,7 @@ export const assets = {
   list_icon,
   parcel_icon,
   body_icon,
-  repo_icon,
+  q_icon,
 };
 
 export const url = "http://localhost:4000";
