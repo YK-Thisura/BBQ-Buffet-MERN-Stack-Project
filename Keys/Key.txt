@@ -24,12 +24,17 @@ email = Chamikara@gmail.com
 
 password =12345678
 
-**************** Admin ****************
+************************************************ Admin Dummy Email and Password
 
 email = admin@gmail.com
 
 password =admin12345
 
+************************************************ Restaurant Staff Dummy Email and Password
+
+email = staff@gmail.com
+
+password =staff12345
 
 ************************************************ Payment Methods
 

@@ -53,6 +53,13 @@ const Navbar = ({ setShowLogin }) => {
           Location
         </a>
         <a
+          href="#Query"
+          onClick={() => setMenu("Query")}
+          className={menu === "Query" ? "active" : ""}
+        >
+          Query
+        </a>
+        <a
           href="#app-download"
           onClick={() => setMenu("app-download")}
           className={menu === "app-download" ? "active" : ""}

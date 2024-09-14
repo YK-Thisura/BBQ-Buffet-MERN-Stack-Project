@@ -20,7 +20,7 @@ const LoginPopup = ({ setShowLogin }) => {
     setData((data) => ({ ...data, [name]: value }));
   };
 
-  const onLogin = async (event) => {
+  const onSubmit = async (event) => {
     event.preventDefault();
 
     // Hardcoded admin and staff credentials
@@ -50,29 +50,50 @@ const LoginPopup = ({ setShowLogin }) => {
       return;
     }
 
-    // Regular user login flow
-    try {
-      const response = await axios.post(`${url}/api/user/login`, data);
+    if (currState === "Login") {
+      // Regular user login flow
+      try {
+        const response = await axios.post(`${url}/api/user/login`, data);
 
-      if (response.data.success) {
-        setToken(response.data.token);
-        localStorage.setItem("token", response.data.token);
-        setShowLogin(false);
+        if (response.data.success) {
+          setToken(response.data.token);
+          localStorage.setItem("token", response.data.token);
+          setShowLogin(false);
 
-        // Redirect to user dashboard or homepage
-        window.location.href = "/dashboard";
-      } else {
-        alert(response.data.message);
+          // Redirect to user dashboard or homepage
+          window.location.href = "/dashboard";
+        } else {
+          alert(response.data.message);
+        }
+      } catch (error) {
+        console.error("Login error: ", error);
+        alert("An error occurred during login. Please try again.");
       }
-    } catch (error) {
-      console.error("Login error: ", error);
-      alert("An error occurred during login. Please try again.");
+    } else {
+      // Registration flow for regular users
+      try {
+        const response = await axios.post(`${url}/api/user/register`, data);
+
+        if (response.data.success) {
+          setToken(response.data.token);
+          localStorage.setItem("token", response.data.token);
+          setShowLogin(false);
+
+          // Redirect to user dashboard or homepage
+          window.location.href = "/dashboard";
+        } else {
+          alert(response.data.message);
+        }
+      } catch (error) {
+        console.error("Registration error: ", error);
+        alert("An error occurred during registration. Please try again.");
+      }
     }
   };
 
   return (
     <div className="login-popup">
-      <form onSubmit={onLogin} className="login-popup-container">
+      <form onSubmit={onSubmit} className="login-popup-container">
         <div className="login-popup-title">
           <h2>{currState}</h2>
           <img

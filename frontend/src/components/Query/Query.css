@@ -1,0 +1,88 @@
+.form-container {
+  width: 80%;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  margin-top: 70px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+}
+
+.form-header {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(116, 58, 25);
+  margin-bottom: 40px;
+}
+
+.form-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.form-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.form-left label {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(116, 58, 25);
+  margin-bottom: 5px;
+}
+
+.form-left input,
+.form-left textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid rgb(116, 58, 25);
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.form-left input:focus,
+.form-left textarea:focus {
+  border-color: rgb(116, 58, 25);
+}
+
+.form-left textarea {
+  height: 100px;
+}
+
+.submit-btn {
+  padding: 12px 20px;
+  background-color: rgb(116, 58, 25);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: rgb(218, 109, 46);
+}
+
+.form-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.query-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: -45px;
+  margin-left: 20px;
+}

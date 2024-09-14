@@ -1,0 +1,43 @@
+/* src/pages/Query/Query.css */
+
+/* Container for the Query page */
+.query-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Title of the page */
+.query-container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* List of queries */
+.query-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.query-list li {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+/* Query title */
+.query-list h3 {
+  font-size: 1.5rem;
+  color: #444;
+  margin: 0;
+}
+
+/* Query content */
+.query-list p {
+  font-size: 1rem;
+  color: #666;
+}
